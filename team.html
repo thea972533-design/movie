@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieZone - Our Team</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background: #0b0b0f;
+        color: white;
+      }
+
+      .team-section {
+        padding: 70px 8%;
+        text-align: center;
+      }
+
+      .subtitle {
+        color: #e50914;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 3px;
+        margin-bottom: 12px;
+      }
+
+      .team-section h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+      }
+
+      .description {
+        color: #aaa;
+        margin-bottom: 45px;
+        line-height: 1.7;
+      }
+
+      .team-container {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 25px;
+      }
+
+      .team-card {
+        background: #17171f;
+        border: 1px solid #292932;
+        border-radius: 15px;
+        padding: 30px 20px;
+        transition: 0.3s;
+      }
+
+      .team-card:hover {
+        transform: translateY(-8px);
+        border-color: #e50914;
+        box-shadow: 0 10px 25px #0008;
+      }
+
+      .team-card img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid #e50914;
+        margin-bottom: 20px;
+      }
+
+      .team-card h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+
+      .team-card .role {
+        color: #e50914;
+        font-size: 14px;
+        margin-bottom: 15px;
+      }
+
+      .team-card .bio {
+        color: #aaa;
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 22px;
+      }
+
+      .contact-btn {
+        display: inline-block;
+        background: #e50914;
+        color: white;
+        padding: 11px 25px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .contact-btn:hover {
+        background: #b80710;
+      }
+
+      @media (max-width: 800px) {
+        .team-container {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media (max-width: 550px) {
+        .team-container {
+          grid-template-columns: 1fr;
+        }
+
+        .team-section h1 {
+          font-size: 28px;
+        }
+      }
+      .navbar {
+        width: 100%;
+        height: 50px;
+        background-color: #080808;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+      }
+      /* Brand */
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      .logo {
+        width: 30px;
+        height: 30px;
+      }
+      .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .brand h2 {
+        font-size: 18px;
+        color: red;
+      }
+      /* Navigation */
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+      }
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+        font-weight: bold;
+      }
+      nav ul li a:hover {
+        color: #ffc400;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="brand">
+        <div class="logo"></div>
+
+        <h2>MovieZone</h2>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="copy.html">HOME</a></li>
+          <li><a href="movie.html">MOVIES</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="team.html">TEAM</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="team-section">
+      <p class="subtitle">MEET OUR TEAM</p>
+
+      <h1>Our Team Members</h1>
+
+      <p class="description">
+        Meet the people behind MovieZone. We work together to bring you a great
+        movie experience.
+      </p>
+
+      <div class="team-container">
+        <!-- MEMBER 1 -->
+        <div class="team-card">
+          <img src="rotha.jpg" alt="Team Member 1" />
+
+          <h2>Rotha</h2>
+        </div>
+
+        <!-- MEMBER 2 -->
+        <div class="team-card">
+          <img src="thea.jpg" alt="Team Member 2" />
+
+          <h2>Lang Sokunthea</h2>
+        </div>
+
+        <!-- MEMBER 3 -->
+        <div class="team-card">
+          <img src="kanika.PNG" alt="Team Member 3" />
+
+          <h2>Brom Samnang Kanika</h2>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
