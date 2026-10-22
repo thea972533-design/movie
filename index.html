@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Movie Website</title>
+
+    <link rel="stylesheet" href="copy.css" />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="navbar">
+      <div class="brand">
+        <div class="logo">
+        
+        </div>
+
+        <h2>MovieZone</h2>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="movie.html">MOVIES</a></li>
+          <li><a href="#about">ABOUT US</a></li>
+           <li><a href="team.html">TEAM</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- BANNER SLIDER -->
+      <section class="banner">
+        <div class="banner-container">
+          <div class="slide">
+            <img
+              src="https://angkordc.com/uploads/Slide_Show_1920x600px_4537131c34.jpg"
+              alt="Movie Banner 1"
+            />
+          </div>
+
+          <div class="slide">
+            <img
+              src="https://angkordc.com/uploads/slideshow_1920x600_2080495cb7.jpg"
+              alt="Movie Banner 2"
+            />
+          </div>
+
+          <div class="slide">
+            <img
+              src="https://angkordc.com/uploads/IMG_0110_899c7e6d3e.jpeg"
+              alt="Movie Banner 3"
+            />
+          </div>
+        </div>
+
+        <!-- Previous Button -->
+        <button class="prev" onclick="prevSlide()">❮</button>
+
+        <!-- Next Button -->
+        <button class="next" onclick="nextSlide()">❯</button>
+
+        <!-- Dots -->
+        <div class="dots">
+          <span class="dot active" onclick="goToSlide(0)"> </span>
+
+          <span class="dot" onclick="goToSlide(1)"> </span>
+
+          <span class="dot" onclick="goToSlide(2)"> </span>
+        </div>
+      </section>
+
+      <!-- TOP UP -->
+      <section class="topup">
+        <div class="coin">🪙</div>
+
+        <div class="topup-text">
+          <p>Want to spend less money purchasing movie?</p>
+
+          <h2>Top up your wallet now and start saving.</h2>
+        </div>
+
+        <button>Top up Now</button>
+      </section>
+      <section class="recomend">
+        <h2>MOVIE</h2>
+        <hr />
+        <br />
+        <div class="movie-container">
+          <div class="movie-card">
+            <div class="movie-image">
+              <img
+                src="https://www.angkordc.com/_next/image?url=%2Fuploads%2Fposter_title_app500x750_4a8c25adb2.jpg&w=1080&q=75"
+                alt="The Shawshank Redemption"
+              />
+            </div>
+
+            <div class="movie-info">
+              <h2>រឿងរងចាំ</h2>
+              <p>⏱️ 2h 22m</p>
+               <button class="buy-btn"
+               onclick="openBuyForm('Interstellar', 1.99)">
+                 Buy Now - $1.99
+            </button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-image">
+              <img
+                src="https://angkordc.com/_next/image?url=%2Fuploads%2F_c6a7428373.jpg&w=1080&q=75"
+                alt=""
+              />
+            </div>
+
+            <div class="movie-info">
+              <h2>រឿង ចញ្ចៀនខ្មោច</h2>
+              <p>⏱️ 2h 22m</p>
+              <button class="buy-btn"
+               onclick="openBuyForm('Interstellar', 1.99)">
+                 Buy Now - $1.99
+            </button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-image">
+              <img
+                src="https://angkordc.com/_next/image?url=%2Fuploads%2Fposter_500x750_website_ae6de3ddf2.jpg&w=1080&q=75"
+                alt=""
+              />
+            </div>
+
+            <div class="movie-info">
+              <h2>រឿង នាងភួង</h2>
+              <p>⏱️ 2h 22m</p>
+               <button class="buy-btn"
+               onclick="openBuyForm('Interstellar', 1.99)">
+                 Buy Now - $1.99
+            </button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-image">
+              <img
+                src="https://angkordc.com/_next/image?url=%2Fuploads%2Ftomorrow_again_89bc8e6b28.jpeg&w=1080&q=75"
+                alt=""
+              />
+            </div>
+
+            <div class="movie-info">
+              <h2>រឿង នាងនាថ</h2>
+              <p>⏱️ 2h 22m</p>
+               <button class="buy-btn"
+               onclick="openBuyForm('Interstellar', 1.99)">
+                 Buy Now - $1.99
+            </button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-image">
+              <img
+                src="https://angkordc.com/_next/image?url=%2Fuploads%2Fportrait_title_app_500x750_b5a0c14e55.jpg&w=1080&q=75"
+                alt=""
+              />
+            </div>
+
+            <div class="movie-info">
+              <h2>រឿង ចាស់កំព្រា</h2>
+              <p>⏱️ 2h 22m</p>
+              <button class="buy-btn"
+               onclick="openBuyForm('Interstellar', 1.99)">
+                 Buy Now - $1.99
+            </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <sectio class="recomend">
+           <h2>NEW</h2>
+           <hr />
+           <br>
+        <div class="movie-container">
+          <div class="movie-card">
+          <div class="movie-image">
+            <img
+              src="https://images.openai.com/static-rsc-4/wy1toaWAbUBGzB_MPgOMa1TRtQMc7APdlhfqyxpVrrpkuwh8LewW0k9ZsHtGMx4sA1xKr0i_vWoCDxp7ykaiAWKEKyO2xKmdGI0c8F0iz4GWWgcWIZ1OyBSZmucSEuEa7uAKJ2C4c-o0iS5qS9_v7FFJm6wTn0jf_VmrVQNhZVutwJz0uw_8nqu-R7YWctkJ?purpose=fullsize"
+              alt="The Shawshank Redemption"
+            />
+          </div>
+
+          <div class="movie-info">
+            <h2>រឿង Spider-Man</h2>
+            <p>⏱️ 2h 22m</p>
+            <button class="buy-btn"
+               onclick="openBuyForm('Interstellar', 1.99)">
+                 Buy Now - $1.99
+            </button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="movie-image">
+            <img
+              src="https://cdn-sg.sf-api.net/images/6Ags1UM8zWgE.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="movie-info">
+            <h2>រឿង សត្វចម្លែកលូកា</h2>
+            <p>⏱️ 2h 22m</p>
+           <button class="buy-btn"
+               onclick="openBuyForm('Interstellar', 1.99)">
+                 Buy Now - $1.99
+            </button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="movie-image">
+            <img
+              src="https://cdn-sg.sf-api.net/images/UUIVAbKm5MyP.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="movie-info">
+            <h2>រឿង ដេវីដ វីរជនក្លាហាន</h2>
+            <p>⏱️ 2h 22m</p>
+            <button class="buy-btn"
+               onclick="openBuyForm('Interstellar', 1.99)">
+                 Buy Now - $1.99
+            </button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="movie-image">
+            <img
+              src="https://cdn-sg.sf-api.net/images/vDzkn3ixhwdA.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="movie-info">
+            <h2>រឿង លោកបងលីអូ</h2>
+            <p>⏱️ 2h 22m</p>
+           <button class="buy-btn"
+               onclick="openBuyForm('Interstellar', 1.99)">
+                 Buy Now - $1.99
+            </button>
+          </div>
+        </div>
+        <div class="movie-card">
+          <div class="movie-image">
+            <img
+              src="https://cdn-sg.sf-api.net/images/9qRTH4oJGpWt.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="movie-info">
+            <h2>រឿង ឆ្លងចូលក្តីស្រមៃ</h2>
+            <p>⏱️ 2h 22m</p>
+            <button class="buy-btn"
+               onclick="openBuyForm('Interstellar', 1.99)">
+                 Buy Now - $1.99
+            </button>
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      
+<!-- About Section -->
+<section class="about" id="about">
+
+    <div class="about-container">
+
+        <!-- About Image -->
+        <div class="about-image">
+            <img
+                src="https://images.openai.com/static-rsc-4/OpN2gotJLCt4IKK4cdP-KMCr8uVlKDXZgv5RIqKxLAdUH64m5VB1dR2cuf444AE82qH6CVXZb2Mzsy9ECorXwu2oKy37VU-2wP2C0ssaHdQIBxTPyxutABRX70yCBTbfU0Lp2p1CIQrssv8ub_Iiz1DaygA_7gBuWLIA1MSJ7hla0HDeEz8MpDlH9klp8Ey5?purpose=fullsize"
+                alt="Movie Cinema"
+            >
+          
+        </div>
+
+        <!-- About Text -->
+        <div class="about-content">
+
+            <p class="about-tag">ABOUT US</p>
+
+            <h2>
+                Welcome to
+                <span>MovieZone</span>
+            </h2>
+
+            <p class="about-description">
+                MovieZone is your ultimate destination for discovering
+                amazing movies. Explore popular films, action movies,
+                comedy, horror, romance and much more.
+            </p>
+
+            <p class="about-description">
+                Our mission is to help movie lovers discover their
+                favorite films and enjoy an amazing movie experience.
+                Find your next favorite movie with MovieZone!
+            </p>
+
+            <!-- Features -->
+            <div class="about-features">
+
+                <div class="feature">
+                    <span class="feature-icon">🎥</span>
+                    <div>
+                        <h3>Latest Movies</h3>
+                        <p>Discover exciting films.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="feature-icon">⭐</span>
+                    <div>
+                        <h3>Popular Films</h3>
+                        <p>Explore audience favorites.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="feature-icon">🍿</span>
+                    <div>
+                        <h3>Many Genres</h3>
+                        <p>Find movies you love.</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="feature-icon">❤️</span>
+                    <div>
+                        <h3>For Movie Lovers</h3>
+                        <p>Made for your entertainment.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <a href="movie.html" class="about-btn">
+                Explore Movies →
+            </a>
+
+        </div>
+    </div>
+
+</section>
+
+    </footer>
+
+    <script src="script.js"></script>
+    
+<div class="buy-form-modal" id="buyFormModal">
+    <form class="buy-form" id="buyForm">
+        <button type="button" class="buy-close"
+            onclick="closeBuyForm()">×</button>
+
+        <h2>MovieZone Checkout</h2>
+        <p>Fill in your information to place an order.</p>
+
+        <label for="movieName">Movie</label>
+        <input type="text" id="movieName" readonly>
+
+        <label for="moviePrice">Price (USD)</label>
+        <input type="text" id="moviePrice" value="1.99" readonly>
+
+        <label for="customerName">Full Name</label>
+        <input type="text" id="customerName"
+            placeholder="Enter your full name" required>
+
+        <label for="paymentMethod">Payment Method</label>
+        <select id="paymentMethod" required>
+            <option value="">-- Choose Payment --</option>
+            <option value="Cash">Cash</option>
+            <option value="Bank Transfer">ABA</option>
+        </select>
+
+        <button type="submit" class="submit-btn">
+            Confirm Buy
+        </button>
+
+          <p id="orderMessage" style="display: none;"></p>
+
+        <button type="button" class="cancel-btn"
+            onclick="closeBuyForm()">Cancel</button>
+
+        <p id="orderMessage" role="status"></p>
+    </form>
+</div>
+
+  </body>
+</html>
